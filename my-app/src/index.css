@@ -1,0 +1,17 @@
+.navb {
+  height: 100vh;
+  background-color: indigo;
+  color: whitesmoke;
+  margin-top: 0%;
+}
+.ntext {
+  color: whitesmoke;
+}
+.ntext Link:hover{
+  background-color: rgba(194, 180, 244, 0.477);
+}
+
+.nb{
+  background-color: indigo;
+  color: whitesmoke; 
+}
