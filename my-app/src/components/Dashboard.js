@@ -11,7 +11,7 @@ const Dashboard = () => {
         <Cards />
       </div>
       <div className="row">
-        <div className="col-8">
+        <div className="col-8 ">
           <Overview />
         </div>
         <div className="col-4">

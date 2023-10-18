@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid } from 'recharts';
+import { BarChart, Bar, XAxis } from 'recharts';
 const data = [{name: 'Jan', uv: 270, pv: 2400, amt: 2400},
               {name: 'Feb', uv: 220, pv: 1200, amt: 1200},
               {name: 'Mar', uv: 380, pv: 1200, amt: 1200},
@@ -20,8 +20,8 @@ const Overview = () => {
     <div>
         <div className="row">
             <div className="col-8">
-                <h2>Overview</h2>
-                <p className='text-muted'>Monthly Earning</p>
+                <h4>Overview</h4>
+                <p className='text-muted size'>Monthly Earning</p>
             </div>
             <div className="col-4">
                 <div className="dropdown">
@@ -39,10 +39,6 @@ const Overview = () => {
         </div>
             <BarChart width={600} height={300} data={data}>
                 <XAxis dataKey="name" stroke="#8884d8" />
-                <YAxis />
-                <Tooltip wrapperStyle={{ width: 100, backgroundColor: '#ccc' }} />
-                <Legend width={100} wrapperStyle={{ top: 40, right: 20, backgroundColor: '#f5f5f5', border: '1px solid #d5d5d5', borderRadius: 3, lineHeight: '40px' }} />
-                <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                 <Bar dataKey="uv" fill="#8884d8" barSize={30} />
             </BarChart>
         </div>
