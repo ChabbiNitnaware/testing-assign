@@ -1,26 +1,31 @@
 import React from 'react';
+import { FaDollarSign, FaListAlt, FaBalanceScale} from 'react-icons/fa';
+import { TbShoppingBag } from "react-icons/tb";
 
 const cardData = [
   {
-    imageSrc: 'https://via.placeholder.com/150',
+    icon: FaDollarSign,
     title:'Earning',
     amount: '$198k',
     content: '37.8% this month',
   },
   {
-    imageSrc: 'https://via.placeholder.com/150',
-    title: 'Card 2',
-    content: 'This is the content of card 2.',
+    icon: FaListAlt,
+    title:'Orders',
+    amount: '$2.4k',
+    content: '2% this month',
   },
   {
-    imageSrc: 'https://via.placeholder.com/150',
-    title: 'Card 3',
-    content: 'This is the content of card 3.',
+    icon: FaBalanceScale,
+    title:'Balance',
+    amount: '$2.4k',
+    content: '2% this month',
   },
   {
-    imageSrc: 'https://via.placeholder.com/150',
-    title: 'Card 4',
-    content: 'This is the content of card 4.',
+    icon: TbShoppingBag,
+    title:'Total Sales',
+    amount: '$89k',
+    content: '11% this week',
   },
 ];
 
@@ -33,8 +38,8 @@ const Dashboard = () => {
             <div className="card mb-4">
               <div className="card-body">
                 <div className="d-flex align-items-center">
-                  <div className="rounded-circle bg-light bg-opacity-10 p-3">
-                    <img src={card.imageSrc} alt={card.title} className="img-fluid" />
+                  <div className="rounded-circle bg-opacity-10 card-color p-3">
+                   {React.createElement(card.icon, { size: 60, color: 'white' })} 
                   </div>
                   <div className="ms-3">
                     <p className="card-title text-muted">{card.title}</p>
