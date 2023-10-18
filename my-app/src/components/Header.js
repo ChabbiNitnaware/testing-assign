@@ -8,7 +8,7 @@ const Header = () =>{
             <div class="container-fluid">
                 <Link className="navbar-brand bg-light" to={"/"}><MdIcons.MdDashboard/>Dashboard</Link>
                 <span className="navbar-text">Hello User</span>
-                <form class="d-flex">
+                <form className="d-flex">
                     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                 </form>
             </div>
