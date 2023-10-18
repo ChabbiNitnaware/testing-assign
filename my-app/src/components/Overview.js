@@ -19,11 +19,11 @@ const Overview = () => {
   return (
     <div>
         <div className="row">
-            <div className="col-8">
+            <div className="col-8 col-sm-12">
                 <h4>Overview</h4>
                 <p className='text-muted size'>Monthly Earning</p>
             </div>
-            <div className="col-4">
+            <div className="col-4 col-sm-12">
                 <div className="dropdown">
                     <button className="btn dropdown-toggle btn-light " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Quantity

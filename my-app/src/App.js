@@ -10,12 +10,12 @@ function App() {
       <Header />
       <div className="container-fluid">
           <div className="row">
-            <nav className="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+            <div className="col-md-3 col-lg-2 col-sm-12 d-md-block bg-light  sidebar">
               <Sideb />
-            </nav>
-            <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            </div>
+            <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4 col-sm-8 ">
               <Dashboard />
-            </main>
+            </div>
           </div>
       </div>
     </>
